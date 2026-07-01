@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: spring-boot-basics-kotlin
+  datasource:
+    url: jdbc:postgresql://aws-0-eu-west-1.pooler.supabase.com:6543/postgres
+    username: postgres.egjotysxqtfrimkadtty
+    password: ${POSTGRES_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+
+
+quotes:
+  search:
+    ignore-case: true
+    min-length: 3
+  validation:
+    min-content-length: 3
+    max-content-length: 300
+    require-author: true
+    allowed-categories:
+      - "motivational"
+      - "funny"
+      - "wisdom"
+      - "finance"
+      - "tech"
+
+server:
+  port: 8081

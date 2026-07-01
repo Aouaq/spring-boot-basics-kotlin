@@ -1,0 +1,7 @@
+spring:
+  application:
+    version: 1.0.0-prod
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
